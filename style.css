@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    /* --accent-color: #29335C; */
+    --accent-color: #016FB9;
+    /* --bg-color: #fff; */
+    --bg-color: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+}
+
+body {
+    /* background-color: #a0e9ce; */
+    background-color: var(--accent-color);
+}
+
+.container {
+    background-color: var(--bg-color);
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    min-height: 500px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px #111;
+    padding: 30px;
+}
+
+.container .input-box {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.input-box #search-text {
+    background-color: var(--bg-color);
+    flex: 0.9;
+    min-width: 1rem;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: none;
+    border-bottom: 2px solid var(--accent-color);
+    outline: none;
+}
+
+#search-text:focus {
+    border-bottom: 2px solid #000000;
+}
+
+.input-box .search-btn {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 800;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--accent-color);
+    color: #fff;
+    box-shadow: 0 0 5px #000;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+
+.input-box .search-btn i {
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.container .output-box {
+    width: 100%;
+    /* display: flex; */
+    padding: 10px;
+}
+
+.output-box .searched-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searched-box button {
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    display: none;
+}
+
+.output-box .searched-text {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2px 0;
+}
+
+.output-box .part-of-speech {
+    font-size: 1.1rem;
+    padding: 2px 0;
+    font-style: italic;
+    color: rgb(122, 122, 122);
+}
+
+.output-box .search-result {
+    font-size: 1.1rem;
+    margin: 50px 0;
+}
+
+.output-box .example {
+    font-size: 1.1rem;
+    margin: 50px 0;
+    padding-left: 1rem;
+    border-left: 5px solid var(--accent-color);
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 20px 10px;
+        border-radius: 0;
+    }
+}
