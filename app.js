@@ -51,7 +51,7 @@ searchBtn.addEventListener("click", async (e) => {
       sound.setAttribute("src", voiceData);
     } else {
       speech.style.display = "none";
-      warning.textContent = "Audio data is not available";
+      warning.textContent = "Audio is not available";
       // console.error("Audio data is missing in the API response.");
       // Handle the missing audio data, e.g., by displaying an error message or fallback content.
     }
