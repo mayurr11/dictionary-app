@@ -85,6 +85,39 @@ body {
     padding: 10px;
 }
 
+.lang-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    display: none;
+  }
+  
+  /* Style the labels */
+  .tab-button + label {
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius: 10px;
+    border: 1px solid #016FB9;
+  }
+  
+  /* Style the selected label */
+  .tab-button:checked + label {
+    background-color: #016FB9;
+    color: white;
+  }
+  
+  /* Style the hover effect */
+  .tab-button:not(:checked) + label:hover {
+    background-color: #f2f2f2;
+  }
+
 .output-box .searched-box {
     display: flex;
     justify-content: space-between;
