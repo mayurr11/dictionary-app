@@ -64,16 +64,21 @@ body {
     font-size: 1.1rem;
     font-weight: 800;
     padding: 10px 25px;
-    border-radius: 10px;
+    border-radius: 50px;
     border: none;
     outline: none;
     background-color: var(--accent-color);
     color: #fff;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #00000082;
     cursor: pointer;
     gap: 0.5rem;
+    transition: all ease-in-out 0.2s;
 }
 
+.search-btn:active {
+    transform: scale(0.91);
+    background-color: #000000;
+}
 .input-box .search-btn i {
     font-weight: 900;
     font-size: 1.1rem;
@@ -87,10 +92,9 @@ body {
 
 .lang-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0 10px;
     margin-bottom: 20px;
-    /* overflow-x: scroll; */
 }
 
 .tab-button {
@@ -99,14 +103,16 @@ body {
   
   /* Style the labels */
   .tab-button + label {
-    padding: 10px 15px;
+    padding: 8px 10px;
     min-width: 7rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-radius: 50px;
     border: 1px solid #016FB9;
+    margin-right: 10px;
   }
   
   /* Style the selected label */
